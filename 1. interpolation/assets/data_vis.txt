@@ -1,0 +1,10 @@
+If the underlying data is meant to be continuous, but due to physical limits, could
+only be captured in a discrete format, interpolation is the way to go.
+Examples: Medical Scan Data (Quantitative Data), Hurricane Data (Also Quantitative Data)
+On the other hand, it makes little sense to apply interpolation on data, that is
+categorical.
+Examples: Statistics about the Program of Students (Categorical), Shirt Size of a
+Person (S/M/L Ordinal)
+
+f(18) = 22,56
+f(43) = 72,44 

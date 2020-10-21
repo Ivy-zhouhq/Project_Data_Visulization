@@ -1,0 +1,8 @@
+You would need an Algorithm to handle these ambiguous cases.
+In 2D we needed to look at an additional point to handle Saddle Points.
+An intuitive but inaccurate way to fix this in 3D, would be to just stuff the holes with additional triangles.
+A better way would be with an asymptotic decider.
+It iterates over all faces on an ambiguous cube and uses bilinear interpolation, to connect the vertices of triangles on that face.
+This always results in a hyperbola.
+Then it calculates the value at the intersection of the two asymptotes.
+Based on this value it then resolves ambiguity as in the 2D case.
